@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Find Image Different</title>
+	<script type="text/javascript" src="different.js"></script>
+	<link rel="stylesheet" type="text/css" href="different.css">
+</head>
+<body>
+	<div class="title">
+		CSC 346 Find Image Different
+	</div>
+	<div class="contentArea">
+		<div id="settingsArea">
+			<span>User Name:</span> <input id="userName" type="text" name="userName" value="Player1" />
+			<span>Display Seconds:</span> <input id="displaySeconds" type="text" name="displaySeconds" value="6" />
+			<button id="btnStart" onclick="InitSettings();">Start</button>
+		</div>
+		<div id="displayArea">
+			<div class="displayTitle">
+				<div id="displayUserName"></div>
+				<div class="LeftSecondTitle">seconds:</div>
+				<div id="leftSeconds"></div>
+			</div>
+			<div id="displayLeft" class="displayImage">
+				
+			</div>
+			<div id="displayRight" class="displayImage">
+				
+			</div>
+		</div>
+		<div id="resultArea">
+			<span>Please fill different image Number:</span> <input id="differentNum" type="text" name="differentNum" />
+			<button id="btnConfirm" onclick="confirmAnswer();">Confirm</button>
+		</div>
+		<div id="scoreArea">
+			<span>Your Score:</span> <span id="scoreNum"></span>
+			<button id="btnClose" onclick="displaySettingsArea();">Close</button>
+		</div>
+	</div>
+</body>
+</html>
